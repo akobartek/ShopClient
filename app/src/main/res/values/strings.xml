@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Księgarnia</string>
+
+    <!-- Cart strings -->
+    <string name="added_to_cart">Dodano do koszyka!</string>
+    <string name="open_cart">Otwórz koszyk</string>
+    <string name="current_cart_value">Obecna wartość koszyka: %.2f PLN</string>
+    <string name="cart_is_empty">Koszyk jest pusty!</string>
+    <string name="cart">Koszyk</string>
+    <string name="add_to_cart">Dodaj do koszyka</string>
+
+    <!-- General strings -->
+    <string name="make_order">Złóż zamówienie</string>
+    <string name="deleted">Usunięto</string>
+    <string name="no_books">Brak książek w tej kategorii!</string>
+    <string name="book_details">Szczegóły książki</string>
+    <string name="book_cover_image">Okładka książki</string>
+    <string name="main_activity_label">Księgarnia</string>
+    <string name="order_made">Złożono zamówienie!</string>
+    <string name="wyszukiwarka">Wyszukiwarka</string>
+    <string name="search_activity_title">Wyszukiwanie \'%s\'</string>
+    <string name="no_search_results">Nie znaleziono żadnych książek</string>
+
+    <!-- Recommendation system strings -->
+    <string name="recommendations">Rekomendacje</string>
+    <string name="recommendation_found">Znaleziono rekomendacje</string>
+    <string name="recommendation_found_message">Czy chcesz obejrzeć proponowane książki?</string>
+    <string name="yes">Tak</string>
+    <string name="no">Nie</string>
+    <string name="clear_shopping_history">Wyczyść historię zakupów</string>
+    <string name="clear_shopping_history_message">Czy na pewno chcesz wyczyścić historię zakupów?</string>
+</resources>

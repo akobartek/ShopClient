@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barteksokolowski.shopclient.ui.activities.BookDetailsActivity">
+
+    <ImageView
+        android:id="@+id/bookCoverImage"
+        android:layout_width="150dp"
+        android:layout_height="210dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/book_cover_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/imagenotavailable" />
+
+    <TextView
+        android:id="@+id/bookPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@color/priceColor"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10000000$" />
+
+    <TextView
+        android:id="@+id/bookCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:elevation="10dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Fantastyka" />
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-condensed"
+        android:maxLines="3"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bookCoverImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Java: A Beginner's Guide, Seventh Edition" />
+
+    <TextView
+        android:id="@+id/bookAuthors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-light"
+        android:maxLines="2"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bookCoverImage"
+        app:layout_constraintTop_toBottomOf="@+id/bookTitle"
+        tools:text="Some authors: author1, author2, etc." />
+
+    <TextView
+        android:id="@+id/bookNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif"
+        android:maxLines="10"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bookCoverImage"
+        app:layout_constraintTop_toBottomOf="@+id/bookAuthors"
+        tools:text="Some additional information about book above" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addToCartBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="36dp"
+        android:src="@drawable/cart_icon"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/addToCartTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/add_to_cart"
+        android:textColor="@color/textColor"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/addToCartBtn"
+        app:layout_constraintEnd_toStartOf="@+id/addToCartBtn"
+        app:layout_constraintTop_toTopOf="@+id/addToCartBtn" />
+
+    <TextView
+        android:id="@+id/currentCartValueTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-light"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/addToCartTV"
+        app:layout_constraintTop_toBottomOf="@+id/addToCartTV"
+        tools:text="Obecna wartość koszyka: 213.70 PLN" />
+
+</android.support.constraint.ConstraintLayout>
